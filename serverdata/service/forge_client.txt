@@ -4,4 +4,3 @@ Ve a tu Launcher de Minecraft y antes de lanzar
 el juego, asegurate de usar la configuración
 correcta:
 - Versión: [Forge 1.20.1 - 47.2.0]
-- Ruta del juego: 
