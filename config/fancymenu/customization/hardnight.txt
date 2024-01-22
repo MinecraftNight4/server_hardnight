@@ -1,0 +1,374 @@
+type = menu
+
+customization-meta {
+  identifier = net.minecraft.client.gui.screens.TitleScreen
+  randomgroup = 1
+  renderorder = foreground
+  randommode = false
+  randomonlyfirsttime = false
+}
+
+customization {
+  path = serverdata/background.jpg
+  action = texturizebackground
+}
+
+customization {
+  keepaspectratio = false
+  action = backgroundoptions
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_multiplayer_button%
+  action = hidebutton
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_accessibility_button%
+  action = hidebutton
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_options_button%
+  action = hidebutton
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_quit_button%
+  action = hidebutton
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_language_button%
+  action = hidebutton
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_singleplayer_button%
+  action = hidebutton
+}
+
+customization {
+  identifier = %id=button_compatibility_id:forge_titlescreen_mods_button%
+  action = hidebutton
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_realms_button%
+  action = hidebutton
+}
+
+customization {
+  orientation = top-left
+  hidden = false
+  x = 207
+  width = 268
+  action = deep_customization_element:title_screen_forge_top
+  actionid = 2cc58472-bcb6-491f-875b-2e6e4620b7461705825831564
+  y = 4
+  height = 19
+}
+
+customization {
+  orientation = top-left
+  hidden = true
+  x = 2
+  width = 108
+  action = deep_customization_element:title_screen_branding
+  actionid = 6a279630-2056-4e91-aa0d-da5791a56b411705825831579
+  y = 316
+  height = 40
+}
+
+customization {
+  orientation = top-left
+  hidden = true
+  x = 454
+  width = 228
+  action = deep_customization_element:title_screen_forge_copyright
+  actionid = 6a6fdef3-766b-4d52-bb4d-1b245f0ece1d1705825831579
+  y = 338
+  height = 9
+}
+
+customization {
+  orientation = top-left
+  hidden = true
+  x = 444
+  width = 13
+  action = deep_customization_element:title_screen_realms_notification
+  actionid = d9fa1297-c0ed-4f3b-9ff4-29c8f7fedfd91705825831580
+  y = 189
+  height = 13
+}
+
+customization {
+  orientation = top-left
+  hidden = true
+  x = 204
+  width = 274
+  action = deep_customization_element:title_screen_logo
+  actionid = 247031fa-e6de-4ec4-9ce1-fec99083c59d1705825831580
+  y = 30
+  height = 52
+}
+
+customization {
+  orientation = original
+  splash_color = #ffff00
+  hidden = true
+  x = 0
+  width = 60
+  splash_rotation = -20
+  action = deep_customization_element:title_screen_splash
+  actionid = ed98831c-a267-4e48-83b5-6d131e036aff1705825831580
+  y = 0
+  height = 30
+}
+
+customization {
+  path = serverdata/game_title.png
+  orientation = top-centered
+  x = -171
+  width = 342
+  action = addtexture
+  actionid = c61d9386-3371-4f63-9d94-9e626abc6cb91705826590530
+  y = 0
+  height = 70
+}
+
+customization {
+  orientation = bottom-left
+  restartbackgroundanimations = true
+  buttonaction = quitgame%btnaction_splitter_fm%
+  backgroundhovered = serverdata/button_warn.png
+  description = ¡Te vamos a extrañar!%n%Regresa pronto...
+  label = Cerrar Minecraft
+  loopbackgroundanimations = true
+  x = 3
+  width = 100
+  action = addbutton
+  actionid = 7a9f1702-0156-450f-8a14-46a09bc88c4f1705826851515
+  y = -44
+  backgroundnormal = serverdata/button_normal.png
+  height = 20
+}
+
+customization {
+  orientation = mid-left
+  restartbackgroundanimations = true
+  buttonaction = mimicbutton;net.minecraft.client.gui.screens.TitleScreen:button_compatibility_id:mc_titlescreen_options_button%btnaction_splitter_fm%
+  backgroundhovered = serverdata/button_hover.png
+  description = ¿Necesitas cambiar algo?%n%¡Tomate tu tiempo!
+  label = Ajustes
+  loopbackgroundanimations = true
+  x = 2
+  width = 100
+  action = addbutton
+  actionid = fbbd9ece-3235-4302-90dc-22f7bc7e55bf1705827177235
+  y = 19
+  backgroundnormal = serverdata/button_normal.png
+  height = 20
+}
+
+customization {
+  orientation = mid-left
+  restartbackgroundanimations = true
+  buttonaction = openlink;https://discord.gg/W4WZMDyfhp%btnaction_splitter_fm%
+  backgroundhovered = serverdata/button_hover.png
+  description = ¡Un lugar ideal para hacer%n%amigos o pedir soporte!
+  label = Ir a Discord
+  loopbackgroundanimations = true
+  x = 2
+  width = 100
+  action = addbutton
+  actionid = deff2d55-ab60-4dd5-ab57-41cdde27327d1705827256935
+  y = -5
+  backgroundnormal = serverdata/button_normal.png
+  height = 20
+}
+
+customization {
+  orientation = mid-left
+  restartbackgroundanimations = true
+  buttonaction = reloadmenu%btnaction_splitter_fm%joinserver;hardnight.lat%btnaction_splitter_fm%
+  backgroundhovered = serverdata/button_hover.png
+  description = {"placeholder":"randomtext","values":{"path":"serverdata/join_motd.txt","interval":"60"}}%n%%n%&f--&7[&3&m----------------------------------------&r%n%Estado: {"placeholder":"serverstatus","values":{"ip":"hardnight.lat"}} &f- Jugadores: &6{"placeholder":"serverplayercount","values":{"ip":"hardnight.lat"}}%n%%n%{"placeholder":"servermotd","values":{"ip":"hardnight.lat","line":"1"}}%n%{"placeholder":"servermotd","values":{"ip":"hardnight.lat","line":"2"}}%n%&3&m-----------------------------------------&r&7]&f--
+  label = ¡Iniciar sesión!
+  loopbackgroundanimations = true
+  x = 2
+  width = 100
+  action = addbutton
+  actionid = abbc367e-543d-439d-b6d1-3255b433744b1705827331641
+  y = -29
+  backgroundnormal = serverdata/button_normal.png
+  height = 20
+}
+
+customization {
+  path = serverdata/title-ui_player.png
+  orientation = top-left
+  x = -3
+  width = 111
+  action = addtexture
+  actionid = 60409b8f-7786-4a23-aa1b-3d5353f785ba1705875487285
+  y = -4
+  height = 101
+}
+
+customization {
+  slim = false
+  auto_skin = false
+  scale = 30
+  showname = false
+  follow_mouse = true
+  capeurl = http://textures.minecraft.net/texture/2340c0e03dd24a11b15a8b33c2a7e9e32abb2051b2481d0ba7defd635ca7a933
+  action = custom_layout_element:fancymenu_customization_player_entity
+  actionid = d9d900de-69aa-4f3b-b2d1-c19c0de70ec41705827747186
+  playername = MinecraftNight4
+  bodyrotationx = 0.0
+  bodyrotationy = 0.0
+  auto_cape = false
+  is_baby = false
+  height = 54
+  orientation = top-left
+  copy_client_player = true
+  headrotationy = 0.0
+  headrotationx = 0.0
+  skinurl = http://textures.minecraft.net/texture/5bfc9113cd90673a4e79eb6c8e7435f31746bdedd45d98cdea181702df09cf66
+  crouching = false
+  x = 44
+  width = 18
+  parrot_left_shoulder = false
+  y = 12
+  parrot = false
+}
+
+customization {
+  orientation = top-left
+  restartbackgroundanimations = true
+  buttonaction = copytoclipboard;Sesión actual: {"placeholder":"realtimeyear"}/{"placeholder":"realtimemonth"}/{"placeholder":"realtimeday"} - {"placeholder":"realtimehour"}:{"placeholder":"realtimeminute"}:{"placeholder":"realtimesecond"} | Jugador: {"placeholder":"playername"} - {"placeholder":"playeruuid"} | RAM: {"placeholder":"usedram"}/{"placeholder":"maxram"} ({"placeholder":"percentram"}%)%btnaction_splitter_fm%
+  backgroundhovered = serverdata/button_null.png
+  description = Pulsa aquí para copiar los%n%datos de tu cuenta de Minecraft.
+  label = {"placeholder":"playername"}
+  loopbackgroundanimations = true
+  x = 2
+  width = 98
+  action = addbutton
+  actionid = 2f2c0877-1575-40ce-96d0-43ffbe0bae4b1705886229042
+  y = 71
+  backgroundnormal = serverdata/button_null.png
+  height = 19
+}
+
+customization {
+  path = serverdata/title-ui_news.png
+  orientation = mid-centered
+  x = -149
+  width = 299
+  action = addtexture
+  actionid = c5bd0d02-66fa-4e55-891a-ae4984255bef1705900224850
+  y = -103
+  height = 188
+}
+
+customization {
+  orientation = mid-centered
+  enable_scrolling = true
+  shadow = false
+  scale = 0.75
+  source = https://raw.githubusercontent.com/MinecraftNight4/server_hardnight/main/serverdata/service/changelog.txt
+  text_border = 0
+  case_mode = normal
+  source_mode = web
+  line_spacing = 1
+  x = -141
+  width = 283
+  action = custom_layout_element:fancymenu_customization_item_text
+  actionid = 28efdd11-318e-4cb9-8589-68da118c49061705878418067
+  y = -57
+  alignment = left
+  height = 136
+}
+
+customization {
+  orientation = mid-centered
+  enable_scrolling = true
+  shadow = false
+  scale = 2.0
+  source = NOTICIAS DE HARDNIGHT
+  text_border = 0
+  case_mode = normal
+  source_mode = direct
+  line_spacing = 1
+  x = -122
+  width = 249
+  action = custom_layout_element:fancymenu_customization_item_text
+  actionid = 50f7811f-dfb3-4b0b-a33e-42e556eff3d61705878276791
+  y = -95
+  alignment = centered
+  base_color = #000000
+  height = 28
+}
+
+customization {
+  path = serverdata/title-ui_extra.png
+  orientation = bottom-centered
+  x = -149
+  width = 299
+  action = addtexture
+  actionid = 0e313c3b-8e98-42d1-8e29-75e50ce8cd791705901481540
+  y = -92
+  height = 82
+}
+
+customization {
+  orientation = bottom-centered
+  enable_scrolling = true
+  shadow = false
+  scale = 1.0
+  source = EVENTOS DEL SERVIDOR
+  text_border = 0
+  case_mode = normal
+  source_mode = direct
+  line_spacing = 1
+  x = -105
+  width = 138
+  action = custom_layout_element:fancymenu_customization_item_text
+  actionid = 66fd80b9-b11d-4f28-91cd-96a7ee46eca61705901693619
+  y = -85
+  alignment = centered
+  base_color = #000000
+  height = 22
+}
+
+customization {
+  orientation = bottom-centered
+  enable_scrolling = true
+  shadow = true
+  scale = 1.0
+  source = https://raw.githubusercontent.com/MinecraftNight4/server_hardnight/main/serverdata/service/event.txt
+  text_border = 0
+  case_mode = normal
+  source_mode = web
+  line_spacing = 1
+  x = -144
+  width = 201
+  action = custom_layout_element:fancymenu_customization_item_text
+  actionid = 1c60fdf6-0a5c-402c-8728-e4f1d46501c81705903635755
+  y = -56
+  alignment = left
+  height = 40
+}
+
+customization {
+  orientation = bottom-centered
+  x = 71
+  width = 75
+  action = addwebtexture
+  actionid = 5c82265c-1c5a-43cd-85bb-823151d982c01705905524396
+  y = -89
+  url = https://raw.githubusercontent.com/MinecraftNight4/server_hardnight/main/serverdata/service/event.png
+  height = 75
+}
+
