@@ -191,7 +191,7 @@ customization {
 customization {
   orientation = mid-left
   restartbackgroundanimations = true
-  buttonaction = reloadmenu%btnaction_splitter_fm%joinserver;hardnight.lat%btnaction_splitter_fm%
+  buttonaction = reloadmenu%btnaction_splitter_fm%joinserver;hardnight.lat%btnaction_splitter_fm%joinserver;{"placeholder":"webtext","values":{"link":"https://raw.githubusercontent.com/MinecraftNight4/server_hardnight/main/serverdata/service/server_address.txt"}}%btnaction_splitter_fm%
   backgroundhovered = serverdata/button_hover.png
   description = {"placeholder":"randomtext","values":{"path":"serverdata/join_motd.txt","interval":"60"}}%n%%n%&f--&7[&3&m----------------------------------------&r%n%Estado: {"placeholder":"serverstatus","values":{"ip":"hardnight.lat"}} &f- Jugadores: &6{"placeholder":"serverplayercount","values":{"ip":"hardnight.lat"}}%n%%n%{"placeholder":"servermotd","values":{"ip":"hardnight.lat","line":"1"}}%n%{"placeholder":"servermotd","values":{"ip":"hardnight.lat","line":"2"}}%n%&3&m-----------------------------------------&r&7]&f--
   label = ¡Iniciar sesión!
@@ -280,6 +280,7 @@ customization {
   source = https://raw.githubusercontent.com/MinecraftNight4/server_hardnight/main/serverdata/service/changelog.txt
   text_border = 0
   case_mode = normal
+  [loading_requirement:fancymenu_visibility_requirement_is_text][requirement_mode:if][req_id:37c2d027-ae7e-4f01-908b-01142966a90d1705971556556] = ["mode":"equals","text":"{"placeholder":"webtext","values":{"link":"https://raw.githubusercontent.com/MinecraftNight4/server_hardnight/main/serverdata/service/ping.txt"}}","compare_with":"pong"]$
   source_mode = web
   line_spacing = 1
   x = -141
@@ -345,6 +346,7 @@ customization {
 customization {
   orientation = bottom-centered
   enable_scrolling = true
+  [loading_requirement:fancymenu_visibility_requirement_is_text][requirement_mode:if][req_id:7be99e58-d4e6-412f-96c7-d1740d11e2951705971525934] = ["mode":"equals","text":"{"placeholder":"webtext","values":{"link":"https://raw.githubusercontent.com/MinecraftNight4/server_hardnight/main/serverdata/service/ping.txt"}}","compare_with":"pong"]$
   shadow = true
   scale = 1.0
   source = https://raw.githubusercontent.com/MinecraftNight4/server_hardnight/main/serverdata/service/event.txt
@@ -363,6 +365,7 @@ customization {
 
 customization {
   orientation = bottom-centered
+  [loading_requirement:fancymenu_visibility_requirement_is_text][requirement_mode:if][req_id:521094ce-5d96-416c-9cb4-c46f3cfc3d711705971501607] = ["mode":"equals","text":"{"placeholder":"webtext","values":{"link":"https://raw.githubusercontent.com/MinecraftNight4/server_hardnight/main/serverdata/service/ping.txt"}}","compare_with":"pong"]$
   x = 71
   width = 75
   action = addwebtexture
@@ -370,5 +373,73 @@ customization {
   y = -89
   url = https://raw.githubusercontent.com/MinecraftNight4/server_hardnight/main/serverdata/service/event.png
   height = 75
+}
+
+customization {
+  orientation = top-left
+  [loading_requirement:fancymenu_visibility_requirement_is_text][requirement_mode:if_not][req_id:e71da606-5852-4619-962a-f5e5df4800451705971075998] = ["mode":"equals","text":"{"placeholder":"webtext","values":{"link":"https://raw.githubusercontent.com/MinecraftNight4/server_hardnight/main/serverdata/service/ping.txt"}}","compare_with":"pong"]$
+  restartbackgroundanimations = true
+  buttonaction = deletefile;serverdata/service/changelog.txt%btnaction_splitter_fm%deletefile;serverdata/service/event.txt%btnaction_splitter_fm%deletefile;serverdata/service/event.png%btnaction_splitter_fm%downloadfile;https://raw.githubusercontent.com/MinecraftNight4/server_hardnight/main/serverdata/service/event.png;serverdata/service/event.png%btnaction_splitter_fm%downloadfile;https://raw.githubusercontent.com/MinecraftNight4/server_hardnight/main/serverdata/service/event.txt;serverdata/service/event.txt%btnaction_splitter_fm%downloadfile;https://raw.githubusercontent.com/MinecraftNight4/server_hardnight/main/serverdata/service/changelog.txt;serverdata/service/changelog.txt%btnaction_splitter_fm%
+  description = &4¡SE DETECTARON PROBLEMAS DE CONEXIÓN!%n%&fSi has tenido problemas de%n%&fconexión, puedes intentar%n%&factualizar haciendo click.
+  label = 
+  loopbackgroundanimations = true
+  x = 462
+  width = 21
+  action = addbutton
+  actionid = 73145dc1-a037-4c2a-8bd0-e523c7743d7e1705970746001
+  y = 83
+  height = 21
+}
+
+customization {
+  orientation = mid-centered
+  enable_scrolling = true
+  shadow = false
+  scale = 0.75
+  source = serverdata/service/changelog.txt
+  text_border = 0
+  case_mode = normal
+  source_mode = local
+  line_spacing = 1
+  x = -141
+  width = 283
+  action = custom_layout_element:fancymenu_customization_item_text
+  actionid = 706561f1-fbde-4b34-9de0-a51ed85d6cd81705972537767
+  y = -57
+  [loading_requirement:fancymenu_visibility_requirement_is_text][requirement_mode:if_not][req_id:37c2d027-ae7e-4f01-908b-01142966a90d1705971556556] = ["mode":"equals","text":"{"placeholder":"webtext","values":{"link":"https://raw.githubusercontent.com/MinecraftNight4/server_hardnight/main/serverdata/service/ping.txt"}}","compare_with":"pong"]$
+  alignment = left
+  height = 136
+}
+
+customization {
+  orientation = bottom-centered
+  enable_scrolling = true
+  shadow = true
+  [loading_requirement:fancymenu_visibility_requirement_is_text][requirement_mode:if_not][req_id:7be99e58-d4e6-412f-96c7-d1740d11e2951705971525934] = ["mode":"equals","text":"{"placeholder":"webtext","values":{"link":"https://raw.githubusercontent.com/MinecraftNight4/server_hardnight/main/serverdata/service/ping.txt"}}","compare_with":"pong"]$
+  scale = 1.0
+  source = serverdata/service/event.txt
+  text_border = 0
+  case_mode = normal
+  source_mode = local
+  line_spacing = 1
+  x = -144
+  width = 201
+  action = custom_layout_element:fancymenu_customization_item_text
+  actionid = 579eb634-e70e-4cc8-8b5d-065fce42f87d1705972739784
+  y = -56
+  alignment = left
+  height = 40
+}
+
+customization {
+  path = serverdata/service/event.png
+  [loading_requirement:fancymenu_visibility_requirement_is_text][requirement_mode:if_not][req_id:78c03928-2347-4b6e-bd22-42ea5e865aef1705972894178] = ["mode":"equals","text":"{"placeholder":"webtext","values":{"link":"https://raw.githubusercontent.com/MinecraftNight4/server_hardnight/main/serverdata/service/ping.txt"}}","compare_with":"pong"]$
+  orientation = top-left
+  x = 412
+  width = 74
+  action = addtexture
+  actionid = aefaf550-2de3-43df-b10b-ef92cef792951705972866553
+  y = 270
+  height = 74
 }
 
