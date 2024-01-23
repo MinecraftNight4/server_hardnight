@@ -4,6 +4,6 @@
 &a[+] &fEl overworld expandira su limite en los proximos dias.
 &a[+] &f¡Recuerda que ESTE SERVIDOR ESTA EN HARDCORE!
 &a[+] &fEl servidor puede presentar bugs, por favor,
-&Freportalos en Discord.
+&freportalos en Discord.
 &4[-] El nether se desactivo por unos dias mientras se
-&Fprecarga el mundo.
+&fprecarga el mundo.
