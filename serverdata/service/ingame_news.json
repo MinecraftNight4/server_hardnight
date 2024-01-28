@@ -1,8 +1,8 @@
 {
   "archive": [
     {
-      "enable": true,
-      "text": "¿Sabes que es lo mas divertido de un juego? ¡Exacto! El momento en el que recibes la noticia que la caracteristica que mas te gusta ES NERFEADA porque los devs no se dieron cuenta que estaba EXTREMADAMENTE ROTO...%n%%n%- MNight4",
+      "enable": false,
+      "text": "&6¡NERFEOS &6EVERYWHERE!%n%%n%¿Sabes que es lo mas divertido de un juego? ¡Exacto! El momento en el que recibes la noticia que la caracteristica que mas te gusta ES NERFEADA porque los devs no se dieron cuenta que estaba EXTREMADAMENTE ROTO...%n%%n%- MNight4",
       "icon": "https://media.discordapp.net/attachments/715733427848085564/1199188772038905977/capoo-bugcat_4.gif"
     },
     {
@@ -11,7 +11,7 @@
       "icon": "https://media.discordapp.net/attachments/414755265452179469/1172633917375922216/image0.gif"
     },
     {
-      "enable": true,
+      "enable": false,
       "text": "&bHMMM.................",
       "icon": "https://media.discordapp.net/attachments/715719367584645232/1188530707023265812/hatsune-miku.gif"
     }
