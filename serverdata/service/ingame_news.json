@@ -2,7 +2,9 @@
   "archive": [
     {
       "enable": true,
-      "text": "Esta es una noticia &6¡MEGA EPICA!&r\nRecuerde, es muy importante tomar en cuenta que esto es una prueba, pero que se le va hacer...",
+      "text": "&6¡ACTUALIZACIÓN EPICA N°1!&r
+      Este json es un ejemplo, espero que funcione
+      las new lines por favor...",
       "icon": "https://media.discordapp.net/attachments/715733427848085564/1199188772038905977/capoo-bugcat_4.gif"
     },
     {
