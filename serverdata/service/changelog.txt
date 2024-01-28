@@ -1,9 +1,0 @@
-&e[Ene 22/2024 - 23:00 ARG.]: &c¡SEAN TODOS BIENVENIDOS!
-&fEl servidor fue lanzado luego de mucho trabajo y su
-&festado actual es de &lPre-Lanzamiento&r:
-&a[+] &fEl overworld expandira su limite en los proximos dias.
-&a[+] &f¡Recuerda que ESTE SERVIDOR ESTA EN HARDCORE!
-&a[+] &fEl servidor puede presentar bugs, por favor,
-&freportalos en Discord.
-&4[-] El nether se desactivo por unos dias mientras se
-&fprecarga el mundo.
