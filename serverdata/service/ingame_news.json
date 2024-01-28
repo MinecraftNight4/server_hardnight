@@ -2,19 +2,16 @@
   "archive": [
     {
       "enable": true,
-      "title": "Noticia 1",
       "text": "Esta es una noticia &6¡MEGA EPICA!&r\nRecuerde, es muy importante tomar en cuenta que esto es una prueba, pero que se le va hacer...",
       "icon": "https://media.discordapp.net/attachments/715733427848085564/1199188772038905977/capoo-bugcat_4.gif"
     },
     {
       "enable": true,
-      "title": "Noticia 2",
       "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla pretium lectus sit amet nisi suscipit, id suscipit nibh dignissim. Proin porttitor libero nec diam mollis dictum. Etiam quis sodales nisi. Nunc pretium leo id ex fringilla semper. Suspendisse dictum, tortor sed dapibus finibus, lorem metus tristique justo, faucibus egestas nulla leo et purus. Cras metus quam, pulvinar quis volutpat sit amet, venenatis sagittis felis. Sed consectetur vulputate libero. Proin porttitor convallis vehicula. Etiam congue malesuada lorem, et tempus eros condimentum eu. Phasellus lacus lorem, sagittis vel tempor eget, venenatis eu felis. Aliquam id enim in leo dapibus placerat ut nec elit. Sed ex risus, dignissim sed velit ac, lacinia dictum magna. Etiam congue velit ut posuere dapibus. Vivamus id mauris a erat accumsan faucibus. Donec quam augue, mattis eu dapibus vel, pulvinar ac nunc.",
       "icon": "https://static-cdn.jtvnw.net/emoticons/v2/emotesv2_e5370869c18147c2b6e5ebc803007794/default/dark/2.0"
     },
     {
       "enable": true,
-      "title": "Noticia 3",
       "text": "Esta es una noticia &6¡MEGA EPICA!&r\nRecuerde, es muy importante tomar en cuenta que esto es una prueba, pero que se le va hacer...",
       "icon": "https://media.discordapp.net/attachments/715733427848085564/1199188772038905977/capoo-bugcat_4.gif"
     }
