@@ -1,0 +1,9 @@
+{  
+	"effect.sound.fragility_phantom": {
+		"sounds": [
+			{
+				"name": "effect/fragility"
+			}
+		]
+	}
+}
